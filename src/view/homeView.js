@@ -6,7 +6,7 @@ function homeView() {
             <div class="card">
                 <h2>${player.name}</h2>
                 <img class="player-image" src="${player.image}" alt="${player.name}">
-                <p>Pokémon: ${player.pokemon}</p>
+                <p>Pokémon: ${player.pokemon.name} (lvl ${player.pokemon.level})</p>
 
                 <h3>Caught Pokémon</h3>
                 <ul class="pokemon-list">
@@ -25,7 +25,7 @@ function createCaughtPokemonsHtml(pokemons) {
 	let html = "";
 
 	for (let i = 0; i < pokemons.length; i++) {
-		html += `<li>${pokemons[i]}</li>`;
+		html += `<li>${pokemons[i].name} – lvl ${pokemons[i].level}</li>`;
 	}
 
 	return html;

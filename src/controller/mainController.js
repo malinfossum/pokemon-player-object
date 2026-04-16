@@ -3,8 +3,8 @@ function changePage(newPage) {
 	updateView();
 }
 
-function catchPokemon(pokemonName) {
-	model.data.player.pokemon = pokemonName;
-	model.data.player.caughtPokemons.push(pokemonName);
+function catchPokemon(pokemon) {
+	model.data.player.pokemon = pokemon;
+	model.data.player.caughtPokemons.push(pokemon);
 	updateView();
 }

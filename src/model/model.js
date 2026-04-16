@@ -6,8 +6,12 @@ const model = {
 		player: {
 			name: "Ash",
 			image: "./src/img/player.png",
-			pokemon: "Pikachu",
-			caughtPokemons: ["Pikachu", "Bulbasaur", "Charmander"],
+			pokemon: { name: "Pikachu", level: 8 },
+			caughtPokemons: [
+				{ name: "Pikachu", level: 8 },
+				{ name: "Bulbasaur", level: 12 },
+				{ name: "Charmander", level: 10 },
+			],
 		},
 	},
 };
